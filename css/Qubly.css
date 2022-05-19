@@ -388,3 +388,205 @@ header .container li:last-child a {
     }
 }
 /* End Engineering Teams */
+/* Start Testimonials */
+.testimonials {
+   padding-top: 90px;
+   padding-bottom: 90px;
+   position: relative;
+}
+.testimonials::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #E5F2FF, #FCF7FF);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: skewy(-6deg);
+}
+.testimonials .testimonial {
+    width: 48%;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+@media (max-width: 991px) {
+    .testimonials .testimonial {
+        width: 80%;
+    }
+}
+@media (max-width: 767px) {
+    .testimonials .testimonial {
+        width: 92%;
+    }
+}
+.testimonials .testimonial p {
+   font-size: 21px;
+}
+.testimonials .testimonial img {
+    display: block;
+    margin: 20px auto;
+}
+.testimonials .testimonial span {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+.testimonials .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   position: relative;
+}
+.testimonials .container::before {
+   content: "";
+   top: -50px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   position: absolute;
+   background-color: #DEC9FA;
+}
+.testimonials .container img {
+    height: 30px;
+}
+@media (max-width: 767px) {
+    .testimonials .container img {
+        display: block;
+        margin: 10px;
+        height: 20px;
+    }
+}
+/* End Testimonials */
+/* Start Signup Form */
+.sign-up {
+   padding-top: 150px;
+   padding-bottom: 150px;
+}
+.sign-up .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .sign-up .container {
+        flex-direction: column;
+    }
+}
+.sign-up .container .content {
+   width: 50%;
+   text-align: center;
+}
+@media (max-width: 767px) {
+    .sign-up .container .content {
+        width: 99%;
+    }
+}
+.sign-up .content h2 {
+   font-size: 36px;
+}
+.sign-up .content span {
+   display: block;
+   margin: 30px 0;
+   position: relative;
+   color: var(--color-of-paragraphs);
+}
+.sign-up .content span::before,
+.sign-up .content span::after {
+   content: "";
+   width: 27%;
+   height: 1px;
+   top: 50%;
+   position: absolute;
+   background-color: var(--color-of-paragraphs);
+}
+.sign-up .content span::before {
+   left: 9%;
+}
+.sign-up .content span::after {
+   right: 9%;
+}
+.sign-up .content .client-logos div {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.sign-up .content .client-logos div:first-child {
+   margin-bottom: 50px;
+}
+.sign-up .form {
+   width: 40%;
+   padding: 30px;
+   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+   text-align: center;
+   position: relative;
+   background-color: white;
+}
+.sign-up .form::before {
+   content: "";
+   width: 115%;
+   height: 100%;
+   bottom: -7.5%;
+   left: -7.5%;
+   position: absolute;
+   z-index: -1;
+   background-color: #F9F0FF;
+}
+@media (max-width: 1125px) {
+    .sign-up .form {
+        width: 38%;
+    }
+    .sign-up .form::before {
+        width: 110%;
+        left: -5%;
+    }
+}
+@media (max-width: 767px) {
+    .sign-up .form {
+        width: 90%;
+        margin-top: 40px;
+    }
+}
+.sign-up .form h3 {
+   font-size: 21px;
+   margin-bottom: 20px;
+}
+.sign-up .form input {
+   display: block;
+   outline: none;
+   border: 1px solid var(--color-of-paragraphs);
+   border-radius: 4px;
+   padding: 15px 20px;
+   width: 100%;
+   margin-bottom: 20px;
+}
+.sign-up .form input:nth-of-type(4) {
+   background-color: var(--main-color);
+   cursor: pointer;
+   color: white;
+}
+.sign-up .form span {
+   display: block;
+}
+.sign-up .form form > a {
+   width: fit-content;
+   padding: 10px;
+   display: block;
+   margin: 20px auto;
+   border-radius: 4px;
+   background-color: #4285F4;
+   color: white;
+}
+.sign-up .form p {
+   padding-top: 20px;
+   font-size: 14px;
+   border-top: 1px solid var(--color-of-paragraphs);
+   color: var(--color-of-paragraphs);
+}
+.sign-up .form p a {
+   text-decoration: underline;
+   padding-left: 10px;
+   color: #4285F4;
+}
+/* End Signup Form */
