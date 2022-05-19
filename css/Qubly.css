@@ -1,6 +1,8 @@
 /* Start Global Roles */
 :root {
     --main-color: #722ED1;
+    --color-of-paragraphs: #8989A2;
+    --main-line-height: 1.5;
 }
 html {
     scroll-behavior: smooth;
@@ -47,9 +49,6 @@ a {
 }
 /* End Global Roles */
 /* Start Header */
-header {
-   
-}
 header .container {
    min-height: 90px;
    display: flex;
@@ -99,7 +98,7 @@ header nav ul {
         display: flex;
     }
 }
-header .container a {
+header .container nav a {
    font-size: 14px;
    padding: 7px 20px;
    color: black;
@@ -158,8 +157,8 @@ header .container li:last-child a {
    color: var(--main-color);
 }
 .home .text p:nth-of-type(2) {
-   line-height: 1.5;
-   color: #8989A2;
+   line-height: var(--main-line-height);
+   color: var(--color-of-paragraphs);
 }
 .home .text h1 {
     margin: 14px 0 13px;
@@ -189,3 +188,203 @@ header .container li:last-child a {
     }
 }
 /* End Home Section */
+/* Start Why Qubly */
+.why-qubly {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.why-qubly .title {
+   width: 37%;
+   margin: 0 auto 40px;
+   text-align: center;
+}
+@media (max-width: 1125px) {
+    .why-qubly .title {
+       width: 60%;
+    }
+}
+@media (max-width: 767px) {
+    .why-qubly .title {
+       width: 90%;
+    }
+}
+.why-qubly .title p:nth-of-type(1) {
+   width: fit-content;
+   padding: 10px;
+   margin: auto;
+   border-radius: 20px;
+   display: flex;
+   background-color: #F9F0FF;
+   color: var(--main-color);
+}
+.why-qubly .title p:nth-of-type(1) img {
+   margin-right: 7px;
+}
+.why-qubly .title h2 {
+   margin: 30px 0 15px;
+   font-size: 36px;
+}
+.why-qubly .title p:nth-of-type(2) {
+   line-height: var(--main-line-height);
+   color: var(--color-of-paragraphs);
+}
+.why-qubly .container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 40px;
+}
+.why-qubly .container .box img {
+   padding: 10px;
+   border-radius: 50%;
+}
+.why-qubly .container .box:nth-of-type(1) img {
+   background-color: #F6FFED;
+}
+.why-qubly .container .box:nth-of-type(2) img {
+   background-color: #FFF1F0;
+}
+.why-qubly .container .box:nth-of-type(3) img {
+   background-color: #E6F7FF;
+}
+.why-qubly .container .box h3 {
+   margin: 20px 0;
+   font-size: 21px;
+}
+.why-qubly .container .box p {
+   line-height: var(--main-line-height);
+   color: var(--color-of-paragraphs);
+}
+/* End Why Qubly */
+/* Start Product Teams */
+.product-teams .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 670px) {
+    .product-teams .container {
+       flex-direction: column;
+    }
+}
+@media (max-width: 991px) {
+    .product-teams .image img {
+       width: 300px;
+    }
+}
+@media (max-width: 670px) {
+    .product-teams .image img {
+       display: none;
+    }
+}
+.product-teams .text {
+   width: 43%;
+}
+@media (max-width: 670px) {
+    .product-teams .text {
+       width: 90%;
+       text-align: center;
+    }
+}
+.product-teams .text p:first-of-type {
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #F9F0FF;
+    color: var(--main-color);
+}
+@media (max-width: 670px) {
+    .product-teams .text p:first-of-type {
+       margin: auto;
+    }
+}
+.product-teams .text  p:first-of-type img {
+    margin-right: 7px;
+}
+.product-teams .text h2 {
+   width: 70%;
+   margin: 30px 0 15px;
+   font-size: 36px;
+}
+@media (max-width: 991px) {
+    .product-teams .text h2 {
+        width: 92%;
+        margin: 30px auto 15px;
+    }
+}
+.product-teams .text  p:last-of-type {
+   line-height: var(--main-line-height);
+   color: var(--color-of-paragraphs);
+}
+/* End Product Teams */
+/* Start Engineering Teams */
+.engineering-team {
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+.engineering-team .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+@media (max-width: 670px) {
+    .engineering-team .container {
+       flex-direction: column;
+    }
+}
+.engineering-team .text {
+   width: 42%;
+}
+@media (max-width: 991px) {
+    .engineering-team .text {
+        width: 55%;
+    }
+}
+@media (max-width: 670px) {
+    .engineering-team .text {
+       width: 90%;
+       text-align: center;
+    }
+}
+.engineering-team .text p:nth-of-type(1) {
+   width: fit-content;
+   padding: 7px 10px;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   background-color: #F9F0FF;
+   color: var(--main-color);
+}
+@media (max-width: 670px) {
+    .engineering-team .text p:nth-of-type(1) {
+       margin: auto;
+    }
+}
+.engineering-team .text p:nth-of-type(1) img {
+   margin-right: 7px;
+}
+.engineering-team .text h2 {
+   width: 79%;
+   margin: 30px 0 15px;
+   font-size: 36px;
+}
+@media (max-width: 991px) {
+    .engineering-team .text h2 {
+        width: 90%;
+        margin: 30px auto 15px;
+    }
+}
+.engineering-team .text p:nth-of-type(2) {
+   line-height: var(--main-line-height);
+   color: var(--color-of-paragraphs);
+}
+.engineering-team .image img {
+   width: 650px;
+}
+@media (max-width: 991px) {
+    .engineering-team .image img {
+        width: 300px;
+    }
+}
+/* End Engineering Teams */
